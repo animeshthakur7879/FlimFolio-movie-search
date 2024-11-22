@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Shadows+Into+Light&display=swap');
+
+*{
+  font-family: "Outfit", sans-serif;
+}
+
+#navbar{
+  background-color: #433D8B;
+}
+#container{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #2E236C;
+}
+#searchBtn{
+  background-color: #2E236C;
+}
+
+/* Card Container */
+.movie-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #222;
+  color: #fff;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Image Container */
+.image-container {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+}
+
+/* Movie Poster */
+.movie-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Poster Hover Effect */
+.movie-card:hover .movie-poster {
+  transform: scale(1.1);
+}
+
+/* Review Overlay */
+.review-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.movie-card:hover .review-overlay {
+  opacity: 1;
+}
+
+/* Review Text */
+.movie-review {
+  color: #fff;
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+  padding: 0 15px;
+}
+
+/* Movie Title */
+.movie-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Movie Rating */
+.movie-rating {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffc107;
+}
